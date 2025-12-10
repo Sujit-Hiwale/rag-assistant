@@ -65,3 +65,50 @@ Cloud-based RAG systems are powerful but expensive and slow on poor networks. Th
 ## **Developer Note**
 
 * Currently, the system supports only one PDF upload at a time. This design choice ensures low memory usage and smooth operation on low-end machines.
+
+---
+
+## **Getting Started**
+
+Follow these steps to run RAG Assistant locally:
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Sujit-Hiwale/rag-assistant.git
+cd rag-assistant
+```
+
+### 2. **Install Dependencies**
+
+This will install dependencies for the root, frontend, and backend:
+
+```bash
+npm install
+```
+
+### 3. **Run Both Frontend and Backend**
+
+Start the system locally with a single command:
+
+```bash
+npm run dev
+```
+
+* Backend runs on `http://localhost:5000`
+* Frontend runs on `http://localhost:5173`
+
+### 4. **Build for Production (Optional)**
+
+```bash
+npm run build
+```
+
+* Builds the frontend using Vite.
+* Backend is TypeScript and runs directly, no separate build required.
+
+### 5. **Upload PDF and Start Chatting**
+
+* Open the frontend URL in your browser.
+* Upload a PDF.
+* Interact with the document using the chat interface.
